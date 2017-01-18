@@ -1,6 +1,7 @@
 ---
 
-- set_fact:
+- name: packages > Set embedded ruby
+  set_fact:
     _manala_sensu_embedded_ruby: "{{ manala_sensu_config.EMBEDDED_RUBY|default(false) }}"
 
 - name: packages > Setup gem packages
