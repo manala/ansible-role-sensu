@@ -5,7 +5,7 @@
   vars:
     manala_sensu_configs_user: root
     manala_sensu_configs_group: sensu
-    manala_sensu_configs_mode: 640
+    manala_sensu_configs_mode: '0640'
 
     manala_sensu_configs:
       - file: transport.json
@@ -15,7 +15,7 @@
       - file: redis.json
         user: sensu
         group: sensu
-        mode: 600
+        mode: '0600'
         config:
           redis:
             host: localhost
