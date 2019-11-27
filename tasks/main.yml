@@ -1,0 +1,33 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_sensu
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_sensu
+
+# Gems
+- import_tasks: gems.yml
+  tags:
+    - manala_sensu
+
+# Configs
+- import_tasks: configs.yml
+  tags:
+    - manala_sensu
+
+# Checks
+- import_tasks: checks.yml
+  tags:
+    - manala_sensu
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_sensu
+    - manala_sensu.services
+    - manala.services
